@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Vidaloka&display=swap" rel="stylesheet">
+    <link href="/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">   
     <link href="style.css" rel="stylesheet">
     <title>Главная страница сайта дизайна интерьеров</title>    
 </head>
@@ -31,7 +32,7 @@
                     <a href="#">Отзывы</a>
                 </li>
             </ul>
-            <a class="tel-nav" href="tel:88003335599">+7 (800) 333-55-99</a>              
+            <a class="tel-nav" href="tel:88003335599"><i class="fas fa-phone-alt"></i> +7 (800) 333-55-99</a>              
         </nav>
     </header>
 
@@ -46,7 +47,12 @@
                 </div>    
             </div>                        
             <img class="promo-img" src="img/promo.jpg" width="1163" height="595" alt="Комната с уютным и лаконичным интерьером">
-            
+            <div class="slides__btn">
+                <button class="btn1" type="submit"></button>
+                <button class="btn2" type="submit"></button>
+                <button class="btn3" type="submit"></button>
+                <button class="btn4" type="submit"></button>
+            </div>
         </section>
 
         <section class="advantages container">
@@ -174,28 +180,30 @@
             </div>
         </section>
         
-        <section class="quick-order container">
-            <h2>Мечтаете об интерьере от Brume?</h2>
-            <p>Оставьте контактные данные, менеджер свяжется с вами в течение 15 минут, для уточнения всех деталей</p>
-            <form class="quick-order-form" action="#" method="POST">
-                <label class="visually-hidden" for="quick-order-form-name">Имя</label>
-                    <input type="text" id="quick-order-form-name" name="quick-order-form-name" placeholder="Имя" required>
-                
-                <label class="visually-hidden" for="quick-order-form-tel">Телефон</label>
-                    <input type="tel" id="quick-order-form-tel" name="quick-order-form-tel" placeholder="Телефон" required >
-                
-                <label class="visually-hidden" for="quick-order-form-email">E-mail</label>
-                    <input type="email" id="quick-order-form-email" name="quick-order-form-email" placeholder="E-mail" required>
-                
-                <button type="submit">Отправить</button>               
+        <section class="quick-order">
+            <div class="quick-order__form">
+                <h2>Мечтаете об интерьере от <span>BRUME</span>?</h2>
+                <p>Оставьте контактные данные, менеджер свяжется с вами в течение 15 минут, для уточнения всех деталей.</p>
+                <form class="quick-order-form" action="#" method="POST">
+                            <input type="text" id="quick-order-form-name" name="quick-order-form-name" placeholder="Имя&#9913;" required>
+                            <label class="visually-hidden" for="quick-order-form-name">Имя</label>
+                            
+                            <input type="tel" id="quick-order-form-tel" name="quick-order-form-tel" placeholder="Телефон&#9913;" required >
+                            <label class="visually-hidden" for="quick-order-form-tel">Телефон</label>
+                            
+                            <input type="email" id="quick-order-form-email" name="quick-order-form-email" placeholder="E-mail">
+                            <label class="visually-hidden" for="quick-order-form-email">E-mail</label>
+                    <button class="btn" type="submit">ОТПРАВИТЬ</button>               
 
-            </form>
-            <p>Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
+                </form>
+                <p>Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
+            </div>  
             <img src="img/image-2.jpg" width="683" height="683" alt="Фотография примера выполненой работы кухня">
         </section>
         
         <section class="reviews container">
-            <h2>Отзывы наших клиентов</h2> 
+            <h2>Отзывы наших клиентов</h2>
+            <div class="reviews__item">
                 <blockquote>         
                 <cite>Александра Холодная</cite>
                 <p>Услуга: интерьер детской</p>               
@@ -203,34 +211,35 @@
                     команда выполнила всё точно в срок, сделали всё как мы и хотели. В следующий раз обратимся к Brume!</p>
                     <img src="img/photo-1.jpg" width="318" height="284" alt="Фото Александра Холодная">
                 </blockquote>
-            <div>
-                <button type="submit">Первый слайд</button>
-                <button type="submit">Второй слайд</button>
-                <button type="submit">Третий слайд</button>
-                <button type="submit">Четвертый слайд</button>
+            </div>    
+            <div class="slides__btn">
+                <button class="btn1" type="submit"></button>
+                <button class="btn2" type="submit"></button>
+                <button class="btn3" type="submit"></button>
+                <button class="btn4" type="submit"></button>
             </div>
-            
-
         </section>
 
     </main>
 
     <footer class="main-footer">        
-            <p>Brume interior, 2017 &copy;</p>
-            <p>HolodnayaDesign</p>        
-        <a><img src="img/logo.png" width="70" height="40" alt="Sience 1997 логотип"></a>
-    
-        <ul class="social-list">
-        <li class="social-list-item">
-            <a href="vk.com">ВКонтакте</a>
-        </li>
-        <li class="social-list-item">
-            <a href="Instagra.mcom">Instagram</a>
-        </li>
-        <li class="social-list-item">
-            <a href="facebook.com">Facebook</a>
-        </li>
-        </ul>
+            <p>BRUME interior, 2017 &copy;</p>
+        <div class="logo-social">
+            <a><img class="logo__footer" src="img/logo.png" width="70" height="40" alt="Sience 1997 логотип"></a>
+        
+            <ul class="social-list">
+            <li class="social-list-item">
+                <a href="vk.com"><i class="fab fa-vk"></i></a>
+            </li>
+            <li class="social-list-item">
+                <a href="Instagra.mcom"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="social-list-item">
+                <a href="facebook.com"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            </ul>
+        </div> 
+        <p>HolodnayaDesign</p>  
     </footer>
     </body>
     </html>
