@@ -213,7 +213,7 @@ header {
     position: absolute;
     border-right: 0.5px solid rgb(240, 237, 237);    
     top: 781px;
-    height: 300%;
+    height: 3500px;
 }
 
 .advantages ul:last-child::after {
@@ -273,8 +273,9 @@ header {
 
 .service__text {
     display: flex;
+    position: relative;
     justify-content: space-between;
-    margin: 30px 0 5px 0;
+    margin: 30px 0 5px 0;    
 }
 
 .service__text h3 {
@@ -463,6 +464,22 @@ form input:active {
     border: none;
     background-color: rgb(41, 58, 73);
     text-decoration: #ccc;
+}
+.quick-order-item {
+    position: relative;
+}
+
+form .fa-user, form .fa-phone-alt, form .fa-envelope {
+    color: #fff;
+    position: absolute;
+    right: 5px;
+    transform: scale(1.2);
+}
+form .fa-phone-alt {
+    top: 60px;
+}
+.fa-envelope {
+    top: 120px;
 }
 
 .btn {
