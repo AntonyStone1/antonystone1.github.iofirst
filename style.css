@@ -21,7 +21,7 @@ body {
 body h1, h2 {
     font-family: 'Vidaloka', serif;
 }
-.visually-hidden {
+.visually-hidden, .hidden_1440{
     display: none;
 }
  
@@ -464,7 +464,7 @@ header {
     background-color: rgb(41, 58, 73);
 }
    
-.quick-order img {
+.quick-order .hidden_768 {
     width: 50%;
     z-index: 1;
 }
@@ -523,7 +523,6 @@ form .fa-phone-alt {
     position: relative;
     display: flex;
     width: 900px;
-    max-width: 1200px;
     height: 400px;
     left: -7px;
     background-color: #fff;
@@ -597,7 +596,7 @@ footer {
     justify-content: center;
     align-items: center;    
     height: 300px;
-    min-width: 1280px;
+    width: 1280px;
     background-color: rgb(33, 50, 65);    
 }
 .logo-social ul {
@@ -646,9 +645,9 @@ footer p {
     body {
         font-size: 12px;
     }
-    .container, .quick-order, footer {
-        width: 768px;
-        min-width: 768px;
+    .container, .quick-order {
+        width: 770px;
+        min-width: 770px;        
     }
     .hamburger {
         display: none;
@@ -707,14 +706,14 @@ footer p {
         position: absolute;
         border-right: 0.5px solid rgb(240, 237, 237);    
         top: 507px;
-        height: 4050px;
+        height: 3550px;
     }
     
     .advantages ul:last-child::after {
         content: '';    
         border-right: 0.5px solid rgb(240, 237, 237);
         top: 200px;
-        height: 4200px;    
+        height: 3500px;    
     }
 
 
@@ -765,4 +764,58 @@ footer p {
     .stages-of-work-item {
         width: 250px;
     }
+
+
+    /* quick-order styles */
+
+    .quick-order__form {
+        position: relative;
+        z-index: 1;
+    }
+    .hidden_768 {
+        display: none;
+    }
+    
+
+    .quick-order__form h2, .quick-order__form p {
+        width: 300px;
+    }
+
+    .quick-order__form form input, .quick-order__form form {
+        width: 300px;
+    }
+
+    .hidden_1440  {
+        display: block;
+        position: relative;
+        width: 385px;
+        height: 683px;
+    }
+    
+    
+    /* reviews styles */
+
+    .reviews__item {
+        width: 550px;
+        height: 300px;
+    }
+
+    .reviews__item p:last-of-type {
+        width: 300px;
+    }  
+
+    .reviews__item img {
+        width: 250px;
+        height: 225px;
+        right: -130px;
+        top: 40px;
+    }
+
+
+    footer {
+        width: 768px;
+        max-width: 768px;
+    }
+
+
 }
