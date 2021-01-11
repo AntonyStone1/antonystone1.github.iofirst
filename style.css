@@ -11,17 +11,20 @@ body {
     background-color: #fcfcf4;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+    
+    
 }
 .container {
     width: 1260px;
     min-width: 1080px;
     margin: 0 auto;
     padding: 0 50px;
+    
 }
 body h1, h2 {
     font-family: 'Vidaloka', serif;
 }
-.visually-hidden, .hidden_1440{
+.visually-hidden, .hidden_1440, .promo-img-crop{
     display: none;
 }
  
@@ -649,10 +652,7 @@ footer p {
         width: 770px;
         min-width: 770px;        
     }
-    .hamburger {
-        display: none;
-    }
-
+    
     .site-navigation-item, .tel-nav {
         font-size: 1em;        
     }
@@ -818,5 +818,163 @@ footer p {
         max-width: 768px;
     }
 
+
+}
+
+@media screen and (max-width: 375px) {
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-size: 10px;
+        
+    }
+
+    .logo, .logo__footer {
+        width: 50px;
+        height: 28.6px;
+    }
+
+    .container, .quik-order, footer {
+        width: 375px;
+        min-width: 375px;
+        padding: 0;
+    }
+    .promo-img {
+        display: none;
+    }
+    .adv-number::before {
+        content: '';
+        display: none;
+    }
+    
+    .advantages ul:last-child::after {
+        content: '';    
+            display: none;
+    }
+
+
+
+    /* header styles */
+    .main-header-nav {
+        justify-content: flex-start;
+    }
+
+    .logo {
+        margin: 10px 0 10px 10px; 
+        position: relative;
+            
+    }
+    .hamburger {
+        display: block;
+        background: transparent;
+        border: none;
+        margin-left: auto;
+        margin-right: 15px;
+        color: #fff;
+        transform: scale(1.9);
+    }
+    .site-navigation, .tel-nav {
+        display: none;
+    }
+
+
+    /* promo styles */
+
+
+
+    .promo {
+        height: 195px;
+    }
+
+    .promo-text {
+        position: relative;
+        width: 67%;
+        height: 144%;
+        
+    }
+
+    .text-position {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        top: 100px;
+        right: 0;
+        font-size: 0.9em;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+    .text-position p {
+        width: 200px;
+        margin: 10px 0 10px 0;
+    }
+    .text-position h1 {
+        width: 200px;
+        padding-left: 5px;
+    }
+    .text-position a {
+        width: 120px;
+        height: 25px;
+    }
+    .arrow-nav {
+        top: 27%;
+        right: 9%;
+    }
+
+
+     .promo-img-crop {
+         display: block;
+         position: absolute;
+         right: 0;
+         top: 0px;
+         width: 124px;
+         height: 194px;
+     }
+
+
+    .promo .slides__btn {
+        display: none;
+    }
+
+
+
+
+
+
+
+    .advantages ul {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .advantages-item {
+        width: 150px;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+
+    .up-adv, .down-adv {
+        align-items: flex-start;
+        margin: 0;
+    }
+    .up-adv {
+        margin-left: 15px;
+    }
+
+
+
+
+
+
+
+
+
+    footer {
+        flex-direction: column;        
+    }
 
 }
