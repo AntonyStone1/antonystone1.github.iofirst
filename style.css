@@ -838,7 +838,7 @@ footer p {
         height: 28.6px;
     }
 
-    .container, .quik-order, footer {
+    .container, .quick-order, footer {
         width: 375px;
         min-width: 375px;
         padding: 0;
@@ -846,6 +846,12 @@ footer p {
     .promo-img {
         display: none;
     }
+
+    .service h2, .stages-of-work h2, .reviews h2 {
+        padding-left: 10px;
+        margin: 50px 0 20px 0;
+    }
+
     .adv-number::before {
         content: '';
         display: none;
@@ -941,10 +947,8 @@ footer p {
 
 
 
-
-
-
-
+    /* advantages styles */
+    
     .advantages ul {
         flex-wrap: wrap;
         align-items: center;
@@ -966,15 +970,110 @@ footer p {
     }
 
 
+    /*service styles */
 
-
-
-
-
-
-
-    footer {
-        flex-direction: column;        
+    .service__parts {
+        flex-wrap: wrap;
     }
 
+    .service__parts ul {
+        flex-direction: row;
+    }
+    .service__parts li {
+        width: 20px;
+        font-size: 0.5em;
+    }
+    .service__parts ul li:nth-child(3)  a{
+        bottom: -20px;
+        left: -10px;
+    }
+
+    .service__example img {
+        width: 370px;
+        height: 160px;
+
+    }
+    .service__example {
+        margin-top: 10px;
+    }
+    .service__text {
+        width: 370px;
+    }
+
+
+
+    /* quick-order */
+    .quik-order {
+        width: 375px;
+        min-width: 360px;
+
+    }
+    .quick-order-item {
+    }
+
+    .hidden_1440, .hidden_768 {
+        display: none;
+    }
+    .quick-order__form {
+        width: 375px;
+        padding: 20px 10px 10px 35px;
+        justify-content: center;
+        
+
+    }
+
+
+
+    /* rviews styles */
+
+    .reviews__item {
+        margin: 20px auto;
+        width: 300px;
+        height: 300px;
+    }
+    .reviews__item blockquote {
+        padding-top: 120px;
+    }
+
+    .reviews__item blockquote p:last-of-type {
+        width: 200px;
+    }
+
+    .reviews__item blockquote img {
+        width: 150px;
+        height: 134px;
+        top: -30px;
+        left: 75px;
+    }
+    .reviews__item .slides__btn {
+        transform: scale(0.5);
+    }
+
+
+
+    /* footer styles */   
+    
+    footer {
+        height: 280px;
+    }
+
+    footer:nth-child(1n) {
+        padding-top: 100px;        
+    }
+    
+    .logo-social {
+        display: flex;
+        justify-content: flex-start;
+        height: 250px;
+    }
+    .logo-social .logo__footer {
+        align-self: flex-start;
+    }
+    .main-footer p:first-of-type {
+        padding-left: 15px;
+    }
+
+    .main-footer p:last-of-type {
+        padding-right: 15px;
+    }
 }
