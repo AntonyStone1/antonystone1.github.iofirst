@@ -663,7 +663,8 @@ footer p {
     /* promo atyles */
  
     .promo h1 {
-        font-size: 4em;
+        font-size: 3.8em;
+        width: 245px;
     }
     .promo-text {
         height: 120%;
