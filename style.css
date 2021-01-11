@@ -41,10 +41,11 @@ header {
 
 .site-navigation {
     display: flex;
-    justify-content: space-between;
-    margin-right: auto;
+    justify-content: center;
+    align-items: center;
     padding-left: 20px;
-    width: 700px;
+    width: 1060px;
+    margin: 0;
     list-style-type: none;
     
 }
@@ -55,12 +56,14 @@ header {
 }
 .main-header-nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     
 
 }
 .site-navigation-item {
+    display: flex;
     padding: 0 10px;
     text-transform: uppercase;
     font-size: x-large;
@@ -70,14 +73,24 @@ header {
     color: #927661;
     transition: 0.3s;
 }
-.logo, .tel-nav {
+.logo {
     margin: 20px 20px 20px 0;
 }
-
-.hamburger {    
-   display: none;
+.site-navigation li:last-of-type {
+    margin-left: auto;
 }
 
+
+.hamburger {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 15px;
+    color: #fff;
+    transform: scale(1.9);
+}
 .hamburger:focus {
     outline: none;
 }
@@ -654,11 +667,18 @@ footer p {
     }
     
     .site-navigation-item, .tel-nav {
-        font-size: 1em;        
+        font-size: 1em; 
+        margin: 0;       
     }
     .site-navigation {
-        width: 400px;
+        width: 550px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
     }
+    
+
+    
 
     /* promo atyles */
  
@@ -874,16 +894,35 @@ footer p {
         position: relative;
             
     }
+    
+    .site-navigation {
+        display: none;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 5px;
+    }
+    .site-navigation li:nth-child(5){
+        margin: 0;
+        align-self: center;
+    }
+
+    .site-navigation-item {
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+
     .hamburger {
         display: block;
-        background: transparent;
-        border: none;
-        margin-left: auto;
-        margin-right: 15px;
-        color: #fff;
-        transform: scale(1.9);
     }
-    .site-navigation, .tel-nav {
+
+    .site-navigation.show {
+        display: flex;
+        
+    }
+    .tel-nav-hidden {
         display: none;
     }
 
@@ -956,7 +995,7 @@ footer p {
 
     }
     .advantages-item {
-        width: 150px;
+        width: 140px;
         height: 300px;
         margin-bottom: 50px;
     }
