@@ -868,7 +868,7 @@ footer p {
     }
 
     .service h2, .stages-of-work h2, .reviews h2 {
-        padding-left: 10px;
+        padding-left: 20px;
         margin: 50px 0 20px 0;
     }
 
@@ -1039,7 +1039,7 @@ footer p {
         margin: 30px 0 0 0;
     }
     .service__text .text__info p {
-        width: 250px;
+        width: 240px;
     }
      .text__info h3 {
         line-height: 1.2em;
