@@ -1009,35 +1009,49 @@ footer p {
     }
 
 
-    /*service styles */
-
-    .service__parts {
-        flex-wrap: wrap;
-    }
+    /*service styles */   
 
     .service__parts ul {
-        flex-direction: row;
+        flex-direction: column;
+        margin-left: 10px;
     }
     .service__parts li {
-        width: 20px;
-        font-size: 0.5em;
+        width: 50px;
+        font-size: 1.2em;
     }
-    .service__parts ul li:nth-child(3)  a{
-        bottom: -20px;
-        left: -10px;
-    }
+    
 
     .service__example img {
-        width: 370px;
-        height: 160px;
+        width: 250px;
+        height: 111px;
+        margin: 0;
+        margin-top: 60px;
 
     }
     .service__example {
+        width: 250px;
         margin-top: 10px;
     }
-    .service__text {
-        width: 370px;
+    .service__text{
+        flex-direction: column;
+        width: 250px;
+        height: 250px;
+        margin: 30px 0 0 0;
     }
+    .service__text .text__info p {
+        width: 250px;
+    }
+     .text__info h3 {
+        line-height: 1.2em;
+        margin-bottom: 10px;
+        width: 240px;
+     }
+     
+     .consultation {
+        width: 230px;
+        height: 50px;
+        flex-direction: row;
+     }
 
 
 
