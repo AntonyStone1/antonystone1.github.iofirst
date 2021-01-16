@@ -491,7 +491,7 @@ form .fa-phone-alt {
     display: flex;
     width: 70%;
     height: 400px;
-    left: -7px;
+    left: -100px;
     background-color: #fff;
     box-shadow: 0 0 30px 1px lightgray;    
 }
@@ -651,6 +651,7 @@ footer p {
         padding-top: 15%;
         width: 60%;
         height: 50%;
+        left: 0;
     }
     .reviews__item blockquote {
         padding: 15% 20px 20px 20px;        
@@ -744,6 +745,13 @@ footer p {
 }
 @media (max-width: 550px){
 
+    .container {
+        background: #fcfcf4;
+    }
+
+    .service h2, .stages-of-work h2, .reviews h2 {
+        font-size: 3em;
+    }
     .hero {
         height: 300px;
     }
@@ -758,18 +766,38 @@ footer p {
         width: 150px;
         height: 30px;
     }
+
+    .project__number {
+        display: none;
+    }
+
+    .advantages {
+        padding-bottom: 70px;
+    }
+
+    .reviews__item {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .logo-social {
+        width: 150px;
+        padding-left: 40px;
+    }
+    .container__footer p{
+        align-self: flex-end;
+        font-size: 1em;
+        padding-bottom: 40px;        
+    }    
+    .container__footer p:last-of-type {
+        position: relative;
+        left: 0%;
+    }
 }
 
 
-@media (max-width: 375px) {
-
-    .container {
-        background: #fcfcf4;
-    }
-    .service h2, .stages-of-work h2, .reviews h2 {
-        font-size: 3em;
-    }
-
+@media (max-width: 375px) { 
+    
     .site-navigation.show {
         height: 300px;
     }    
@@ -801,34 +829,11 @@ footer p {
     }
     .consultation {
         min-width: 230px;
-    }
-
-    .project__number {
-        display: none;
-    }
+    }  
 
     .quick-order__form {
         min-width: 100%;
         padding: 50px;
-    }
-    
-
-    .reviews__item {
-        width: 90%;
-    }
-
-    .container__footer p{
-        align-self: flex-end;
-        font-size: 1em;
-        padding-bottom: 40px;        
-    }
-    .container__footer__license {
-        position: relative;
-        width: 100px;
-    } 
-    .container__footer p:last-of-type {
-        position: relative;
-        left: -80px;
-    }
+    }    
 }
 
