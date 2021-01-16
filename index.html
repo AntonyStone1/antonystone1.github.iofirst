@@ -14,241 +14,252 @@
     <title>Главная страница сайта дизайна интерьеров</title>    
 </head>
 <body>
-    <header class="main-header container">         
-        <nav class="main-header-nav">
-            <a>
-                <a href="#"><img class="logo" src="img/logo.png" width="70" height="40" alt="Sience 1997 логотип"></a>
-            </a> 
-            <button class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>              
-            </button>    
-            <ul class="site-navigation" id="site-navigation">
-                <li class="site-navigation-item">
-                    <a href="#">Главная</a>
-                </li>
-                <li class="site-navigation-item">
-                    <a href="#">Преимущества</a>
-                </li>
-                <li class="site-navigation-item">
-                    <a href="#">Наши услуги</a>
-                </li>
-                <li class="site-navigation-item">
-                    <a href="#">Отзывы</a>
-                </li>
-                <li><a class="tel-nav" id="tel-nav" href="tel:88003335599"><i class="fas fa-phone-alt"></i> <span class="tel-nav-hidden">+7 (800) 333-55-99</span></a></li>
-            </ul>
-            
-            
-        </nav>
+    <header class="main-header">
+        <div class="container__header">        
+            <nav class="main-header-nav">                
+                    <a href="#"><img class="logo" src="img/logo.png" alt="Sience 1997 логотип"></a>                 
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>              
+                </button>    
+                <ul class="site-navigation" id="site-navigation">
+                    <li class="site-navigation-item">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="site-navigation-item">
+                        <a href="#">Преимущества</a>
+                    </li>
+                    <li class="site-navigation-item">
+                        <a href="#">Наши услуги</a>
+                    </li>
+                    <li class="site-navigation-item">
+                        <a href="#">Отзывы</a>
+                    </li>
+                    <li class="telephone">
+                        <a class="tel-nav" id="tel-nav" href="tel:88003335599">
+                            <i class="fas fa-phone-alt"></i> <span class="tel-nav__hidden">+7 (800) 333-55-99</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div> 
     </header>
 
     <main>
         <h1 class="visually-hidden"> Главная страница студии дизайна &laquo;Brume&raquo;</h1>  
-        <section class="promo container">
-            <div class="promo-text">
-                <div class="text-position">
-                    <h1>Дизайн интерьеров</h1>
-                    <p>Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.</p>
-                    <a href="#">Заказать дизайн <div class="arrow-nav"> &rarr;</div></a>
-                </div>    
-            </div>                        
-            <img class="promo-img" src="img/promo.jpg" width="1163" height="595" alt="Комната с уютным и лаконичным интерьером">
-            <img class="promo-img-crop" src="img/promo-crop.jpg" width="386" height="595" alt="Комната с уютным и лаконичным интерьером">
-            <div class="slides__btn">
-                <button class="btn1" type="submit"></button>
-                <button class="btn2" type="submit"></button>
-                <button class="btn3" type="submit"></button>
-                <button class="btn4" type="submit"></button>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-desc">
+                    <div class="hero-desc__text">
+                        <h1>Дизайн интерьеров</h1>
+                        <p>Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.</p>
+                        <button class="hero-desc__btn">Заказать дизайн <div class="hero-desc__btn__arrow"> &rarr;</div></button>
+                    </div>    
+                </div>                        
+                <img class="hero-desc__img" src="img/promo.jpg" alt="Комната с уютным и лаконичным интерьером">
+                <div class="slides__btns visually-hidden">
+                    <button class="btn btn__active" type="submit"></button>
+                    <button class="btn" type="submit"></button>
+                    <button class="btn" type="submit"></button>
+                    <button class="btn" type="submit"></button>
+                </div>
             </div>
         </section>
 
-        <section class="advantages container">
-            <h2 class="visually-hidden">Наши преимущества</h2>
-            <ul>
-                <li class="advantages-item up-adv">
-                <p class="adv-number">01</p>
-                <h3>Берем весь ремонт на себя</h3>               
-                    <p>Заботы по дизайну и отделке помещения возьмём на себя,
-                    останется дождаться завершения работ и наслаждаться результатом
-                    </p>
-                </li>
-            
-                <li class="advantages-item down-adv">
-                    <p class="adv-number">02</p>
-                    <h3>Мы - профессионалы своего дела</h3>               
-                        <p>Наши дизайнеры постоянно повышают квалификацию,
-                            посещают курсы и тренинги, а студия уже реализовала свыше 1000
-                            дизайн-проектов 
+        <section class="advantages">
+            <div class="container">
+                <h2 class="visually-hidden">Наши преимущества</h2>
+                <ul>
+                    <li class="advantages-item">
+                    <p class="adv-number">01</p>
+                    <h3>Берем весь ремонт на себя</h3>               
+                        <p>Заботы по дизайну и отделке помещения возьмём на себя,
+                        останется дождаться завершения работ и наслаждаться результатом
                         </p>
-                </li>
+                    </li>
+                
+                    <li class="advantages-item">
+                        <p class="adv-number">02</p>
+                        <h3>Мы - профессионалы своего дела</h3>               
+                            <p>Наши дизайнеры постоянно повышают квалификацию,
+                                посещают курсы и тренинги, а студия уже реализовала свыше 1000
+                                дизайн-проектов 
+                            </p>
+                    </li>
 
-                <li class="advantages-item up-adv">
-                    <p class="adv-number">03</p>
-                    <h3>Наши проекты индивидуальны</h3>               
-                        <p>Каждый, созданный студией, интерьер - индивидуальное и максимально продуманное 
-                            решение для каждого вида помещения
-                        </p>
-                </li>
+                    <li class="advantages-item">
+                        <p class="adv-number">03</p>
+                        <h3>Наши проекты индивидуальны</h3>               
+                            <p>Каждый, созданный студией, интерьер - индивидуальное и максимально продуманное 
+                                решение для каждого вида помещения
+                            </p>
+                    </li>
 
-                <li class="advantages-item down-adv">
-                    <p class="adv-number">04</p>
-                    <h3>Работаем на выгодных условиях</h3>               
-                        <p>Ценовая политика студии очень лояльна, мы осуществляем контроль всего процесса работы
-                            и получаем результат который делает клиентов счастливыми
-                        </p>
-                </li>
-
-            </ul>
-
+                    <li class="advantages-item">
+                        <p class="adv-number">04</p>
+                        <h3>Работаем на выгодных условиях</h3>               
+                            <p>Ценовая политика студии очень лояльна, мы осуществляем контроль всего процесса работы
+                                и получаем результат который делает клиентов счастливыми
+                            </p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <section class="service container">
-            <h2>Наши услуги</h2>
-            <div class="service__parts">
-                <ul>
-                    <li class="service-item"><a href="#">Дизайн жилого помещения</a></li>
+        <section class="service">
+            <div class="container">
+                <h2>Наши услуги</h2>
+                <div class="service__parts">
+                    <ul>
+                        <li class="service-item"><a href="#">Дизайн жилого помещения</a></li>
 
-                    <li class="service-item"><a href="#">Дизайн отельных комнат</a></li>
+                        <li class="service-item"><a href="#">Дизайн отельных комнат</a></li>
 
-                    <li class="service-item"><a href="#">Дизайн коммерческих объектов</a></li>
+                        <li class="service-item"><a href="#">Дизайн коммерческих объектов</a></li>
 
-                    <li class="service-item"><a href="#">Ремонт под ключ</a></li>
+                        <li class="service-item"><a href="#">Ремонт под ключ</a></li>
 
-                    <li class="service-item"><a href="#">Отделочные работы</a></li>
+                        <li class="service-item"><a href="#">Отделочные работы</a></li>
 
-                    <li class="service-item"><a href="#">Выезд дизайнера на дом</a></li>
-                </ul>
-                <div class="service__example">
-                    <img src="img/image.jpg"  alt="Фотография примера выполненой работы">
-                    <div class="service__text">
-                        <div class="text__info">    
-                            <h3>Дизайн коммерческих объектов</h3>
-                            <p>Работая с коммерческими объектами, студия изучает целевую аудиторию, создаём
-                                коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели
-                                возвращаться в интерьер снова и снова
-                            </p>
+                        <li class="service-item"><a href="#">Выезд дизайнера на дом</a></li>
+                    </ul>
+                    <div class="service__example">
+                        <img src="img/image.jpg"  alt="Фотография примера выполненой работы">
+                        <div class="service__eaxample__text">
+                            <div class="service__eaxample__text__info">    
+                                <h3>Дизайн коммерческих объектов</h3>
+                                <p>Работая с коммерческими объектами, студия изучает целевую аудиторию, создаём
+                                    коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели
+                                    возвращаться в интерьер снова и снова
+                                </p>
+                            </div>
+                            <div class="consultation">
+                                <p class="project__number">532 проекта</p>
+                                <a href="#">Консультация</a>
+                            </div>    
                         </div>
-                        <div class="consultation">
-                            <p class="project__number">532 проекта</p>
-                            <a href="#">Консультация</a>
-                        </div>    
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="stages-of-work container">
-            <h2>Этапы работы</h2>
-            <div class="stages-of-work__parts">
-                <ul>
-                    <li class="stages-of-work-item">
-                        <p class="number__list">1</p>
-                        <div class="stages__text">
-                            <h3>Консультация</h3>
-                            <p>Обсуждаем задачи и пожелания, предлагаем варианты дизайна интерьера, оговариваем сроки.</p>
+        <section class="stages-of-work">
+            <div class="container">
+                <h2>Этапы работы</h2>
+                <div class="stages-of-work__parts">
+                    <ul>
+                        <li class="stages-of-work__parts__item">
+                            <p class="number__list">1</p>
+                            <div class="stages__text">
+                                <h3>Консультация</h3>
+                                <p>Обсуждаем задачи и пожелания, предлагаем варианты дизайна интерьера, оговариваем сроки.</p>
+                            </div>
+                            </li>
+                        <li class="stages-of-work__parts__item">
+                            <p class="number__list">2</p>
+                            <div class="stages__text">
+                                <h3>Техническое задание</h3>
+                                <p>Составляем техническое задание. Заключаем договор, в котором прописываем все этапы проекта.</p>
                         </div>
                         </li>
-                    <li class="stages-of-work-item">
-                        <p class="number__list">2</p>
-                        <div class="stages__text">
-                            <h3>Техническое задание</h3>
-                            <p>Составляем техническое задание. Заключаем договор, в котором прописываем все этапы проекта.</p>
-                    </div>
-                    </li>
-                    <li class="stages-of-work-item">
-                        <p class="number__list">3</p>
-                        <div class="stages__text">
-                            <h3>Замеры и планировка</h3>
-                            <p>Фиксируем размеры стен, окон, плинтусов, дверных проёмов для эффективной работы.</p>
-                        </div>
-                    </li>
-                    <li class="stages-of-work-item">
-                        <p class="number__list">4</p>
-                        <div class="stages__text">
-                            <h3>Дизайн-концепция</h3>
-                            <p>Создаем концепцию на основе пожеланий клиента, его образов и ощущений. Подбираем мебель.</p>
-                        </div>
-                    </li>
-                    <li class="stages-of-work-item">
-                        <p class="number__list">5</p>
-                        <div class="stages__text">
-                            <h3>3D Визуализация</h3>
-                            <p>Создаем 3d визуализацию, собираем пакет чертежей соответствующий строительным нормам.</p>
-                        </div>
-                    </li>
-                    <li class="stages-of-work-item">
-                        <p class="number__list">6</p>
-                        <div class="stages__text">
-                            <h3>Комплектация интерьера</h3>
-                            <p>Подбираем мебель, отделочные материалы, светильники и текстиль. Декорируем интерьер.</p>
-                        </div>
-                    </li>
-                </ul>
+                        <li class="stages-of-work__parts__item">
+                            <p class="number__list">3</p>
+                            <div class="stages__text">
+                                <h3>Замеры и планировка</h3>
+                                <p>Фиксируем размеры стен, окон, плинтусов, дверных проёмов для эффективной работы.</p>
+                            </div>
+                        </li>
+                        <li class="stages-of-work__parts__item">
+                            <p class="number__list">4</p>
+                            <div class="stages__text">
+                                <h3>Дизайн-концепция</h3>
+                                <p>Создаем концепцию на основе пожеланий клиента, его образов и ощущений. Подбираем мебель.</p>
+                            </div>
+                        </li>
+                        <li class="stages-of-work__parts__item">
+                            <p class="number__list">5</p>
+                            <div class="stages__text">
+                                <h3>3D Визуализация</h3>
+                                <p>Создаем 3d визуализацию, собираем пакет чертежей соответствующий строительным нормам.</p>
+                            </div>
+                        </li>
+                        <li class="stages-of-work__parts__item">
+                            <p class="number__list">6</p>
+                            <div class="stages__text">
+                                <h3>Комплектация интерьера</h3>
+                                <p>Подбираем мебель, отделочные материалы, светильники и текстиль. Декорируем интерьер.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         
         <section class="quick-order">
-            <div class="quick-order__form">
-                <h2>Мечтаете об интерьере от <span>BRUME</span>?</h2>
-                <p>Оставьте контактные данные, менеджер свяжется с вами в течение 15 минут, для уточнения всех деталей.</p>
-                <form class="quick-order-item" action="#" method="POST">
-                            <input type="text" id="quick-order-form-name" name="quick-order-form-name" placeholder="Имя&#9913;" required>
-                            <label class="visually-hidden" for="quick-order-form-name">Имя</label>
-                            <i class="fas fa-user"></i>
-                            <input type="tel" id="quick-order-form-tel" name="quick-order-form-tel" placeholder="Телефон&#9913;" required >
-                            <label class="visually-hidden" for="quick-order-form-tel">Телефон</label>
-                            <i class="fas fa-phone-alt"></i>
-                            <input type="email" id="quick-order-form-email" name="quick-order-form-email" placeholder="E-mail">
-                            <label class="visually-hidden" for="quick-order-form-email">E-mail</label>
-                            <i class="far fa-envelope"></i>
-                            <button class="btn" type="submit">ОТПРАВИТЬ</button>               
-
-                </form>
-                <p>Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
-            </div>  
-            <img class="hidden_768" src="img/image-2.jpg" width="683" height="683" alt="Фотография примера выполненой работы кухня">
-            <img class="hidden_1440" src="/img/image-2-crop.jpg" width="384" height="683"  alt="Фотография примера выполненой работы кухня">
-        </section>
-        
-        <section class="reviews container">
-            <h2>Отзывы наших клиентов</h2>
-            <div class="reviews__item">
-                <blockquote>         
-                <cite>Александра Холодная</cite>
-                <p>Услуга: интерьер детской</p>               
-                    <p>Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко,
-                    команда выполнила всё точно в срок, сделали всё как мы и хотели. В следующий раз обратимся к Brume!</p>
-                    <img src="img/photo-1.jpg" width="318" height="284" alt="Фото Александра Холодная">
-                </blockquote>
-            </div>    
-            <div class="slides__btn">
-                <button class="btn1" type="submit"></button>
-                <button class="btn2" type="submit"></button>
-                <button class="btn3" type="submit"></button>
-                <button class="btn4" type="submit"></button>
+            <div class="container">
+                <div class="quick-order__form">
+                    <h2>Мечтаете об интерьере от <span>BRUME</span>?</h2>
+                    <p>Оставьте контактные данные, менеджер свяжется с вами в течение 15 минут, для уточнения всех деталей.</p>
+                    <form class="quick-order__form__item" action="#" method="POST">
+                                <input type="text" id="quick-order-form-name" name="quick-order-form-name" placeholder="Имя&#9913;" required>
+                                <label class="visually-hidden" for="quick-order-form-name">Имя</label>
+                                <i class="fas fa-user"></i>
+                                <input type="tel" id="quick-order-form-tel" name="quick-order-form-tel" placeholder="Телефон&#9913;" required >
+                                <label class="visually-hidden" for="quick-order-form-tel">Телефон</label>
+                                <i class="fas fa-phone-alt"></i>
+                                <input type="email" id="quick-order-form-email" name="quick-order-form-email" placeholder="E-mail">
+                                <label class="visually-hidden" for="quick-order-form-email">E-mail</label>
+                                <i class="far fa-envelope"></i>
+                                <button class="btn" type="submit">ОТПРАВИТЬ</button>                    
+                    </form>
+                    <p>Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
+                </div>  
+                <img class="quick-order__img" src="img/image-2.jpg" alt="Фотография примера выполненой работы кухня">
             </div>
         </section>
-
+        
+        <section class="reviews">
+            <div class="container">
+                <h2>Отзывы наших клиентов</h2>
+                <div class="reviews__item">
+                    <blockquote>         
+                        <cite>Александра Холодная</cite>
+                        <p>Услуга: интерьер детской</p>               
+                        <p>Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко,
+                        команда выполнила всё точно в срок, сделали всё как мы и хотели. В следующий раз обратимся к Brume!</p>
+                        <img src="img/photo-1.jpg" alt="Фото Александра Холодная">
+                    </blockquote>
+                </div>    
+                <div class="slides__btns visually-hidden">
+                    <button class="btn btn__active" type="submit"></button>
+                    <button class="btn" type="submit"></button>
+                    <button class="btn" type="submit"></button>
+                    <button class="btn" type="submit"></button>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="main-footer container">        
-            <p>BRUME interior, 2017 &copy;</p>
-        <div class="logo-social">
-            <a href="#"><img class="logo__footer" src="img/logo.png" width="70" height="40" alt="Sience 1997 логотип"></a>
-        
-            <ul class="social-list">
-            <li class="social-list-item">
-                <a href="https://vk.com"><i class="fab fa-vk"></i></a>
-            </li>
-            <li class="social-list-item">
-                <a href="https://Instagra.com"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li class="social-list-item">
-                <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
-            </li>
-            </ul>
+    <footer class="main-footer">
+        <div class="container__footer">
+            <p class="container__footer__license">BRUME interior, 2021 &copy;</p>
+            <div class="logo-social">
+                <a href="#">
+                    <img class="logo__footer" src="img/logo.png" alt="Sience 1997 логотип">
+                </a>        
+                <ul class="social-list">
+                    <li class="social-list-item">
+                        <a href="https://vk.com"><i class="fab fa-vk"></i></a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="https://Instagra.com"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                </ul>
+            </div> 
+            <p>HolodnayaDesign</p> 
         </div> 
-        <p>HolodnayaDesign</p>  
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
