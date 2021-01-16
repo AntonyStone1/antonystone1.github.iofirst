@@ -772,7 +772,7 @@ footer p {
 
     .site-navigation.show {
         height: 300px;
-    }
+    }    
 
     .main-header, .hero {
         background: rgba(18, 37, 54);
@@ -791,6 +791,13 @@ footer p {
 
     .service {
         padding-top: 25%;
+    }
+    .service__eaxample__text {
+        margin: 0;
+    }
+    .service__eaxample__text__info h3 {
+        font-size: 1.9em;
+        margin-bottom: 10px;
     }
     .consultation {
         min-width: 230px;
