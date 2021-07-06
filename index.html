@@ -14,7 +14,7 @@
     <title>Главная страница сайта дизайна интерьеров</title>    
 </head>
 <body>
-    <header class="main-header">
+    <header class="main-header" id="top">
         <div class="container__header">        
             <nav class="main-header-nav">                
                     <a href="#"><img class="logo" src="img/logo.png" alt="Sience 1997 логотип"></a>                 
@@ -26,13 +26,13 @@
                         <a href="#">Главная</a>
                     </li>
                     <li class="site-navigation-item">
-                        <a href="#">Преимущества проверка</a>
+                        <a href="#advantages">Преимущества</a>
                     </li>
                     <li class="site-navigation-item">
-                        <a href="#">Наши услуги</a>
+                        <a href="#services">Наши услуги</a>
                     </li>
                     <li class="site-navigation-item">
-                        <a href="#">Отзывы</a>
+                        <a href="#reviews">Отзывы</a>
                     </li>
                     <li class="telephone">
                         <a class="tel-nav" id="tel-nav" href="tel:88003335599">
@@ -48,28 +48,34 @@
         <h1 class="visually-hidden"> Главная страница студии дизайна &laquo;Brume&raquo;</h1>  
         <section class="hero">
             <div class="container">
-                <div class="hero-desc">
+                <div class="hero-desc zIndex">
                     <div class="hero-desc__text">
                         <h1>Дизайн интерьеров</h1>
                         <p>Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.</p>
-                        <button class="hero-desc__btn">Заказать дизайн <div class="hero-desc__btn__arrow"> &rarr;</div></button>
+                        <button class="hero-desc__btn"><a href="#quick-order">Заказать дизайн</a></button>
                     </div>    
                 </div>                        
-                <img class="hero-desc__img" src="img/promo.jpg" alt="Комната с уютным и лаконичным интерьером">
-                <div class="slides__btns visually-hidden">
-                    <button class="btn btn__active" type="submit"></button>
-                    <button class="btn" type="submit"></button>
-                    <button class="btn" type="submit"></button>
-                    <button class="btn" type="submit"></button>
+                <!-- <img class="hero-desc__img" src="img/promo.jpg" alt="Комната с уютным и лаконичным интерьером"> -->
+                <div class="hero-slider ">
+                    <div class="item"><img src="img/promo1.jpg" alt=""></div>
+                    <div class="item"><img src="./img/heroSlider22.jpg" alt=""></div>
+                    <div class="item"><img src="./img/heroSlider3.jpg" alt=""></div>
+                    <div class="item"><img src="./img/heroSlider4.jpg" alt=""></div>                    
+                </div>
+                <div class="slider-dots">
+                    <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(4)"></span> 
                 </div>
             </div>
         </section>
 
         <section class="advantages">
             <div class="container">
-                <h2 class="visually-hidden">Наши преимущества</h2>
+                <h2 class="visually-hidden" >Наши преимущества</h2>
                 <ul>
-                    <li class="advantages-item">
+                    <li class="advantages-item" id="advantages">
                     <p class="adv-number">01</p>
                     <h3>Берем весь ремонт на себя</h3>               
                         <p>Заботы по дизайну и отделке помещения возьмём на себя,
@@ -107,29 +113,108 @@
 
         <section class="service">
             <div class="container">
-                <h2>Наши услуги</h2>
+                <h2 id="services">Наши услуги</h2>
                 <div class="service__parts">
-                    <ul>
-                        <li class="service-item"><a href="#">Дизайн жилого помещения</a></li>
+                    <ul class='service-container'>
+                        <li class="service-item">Дизайн жилого помещения</li>
 
-                        <li class="service-item"><a href="#">Дизайн отельных комнат</a></li>
+                        <li class="service-item">Дизайн отельных комнат</li>
 
-                        <li class="service-item"><a href="#">Дизайн коммерческих объектов</a></li>
+                        <li class="service-item service-item--active">Дизайн коммерческих объектов</li>
 
-                        <li class="service-item"><a href="#">Ремонт под ключ</a></li>
+                        <li class="service-item">Ремонт под ключ</li>
 
-                        <li class="service-item"><a href="#">Отделочные работы</a></li>
+                        <li class="service-item">Отделочные работы</li>
 
-                        <li class="service-item"><a href="#">Выезд дизайнера на дом</a></li>
+                        <li class="service-item">Выезд дизайнера на дом</li>
                     </ul>
-                    <div class="service__example">
+
+                    <div class="service-example service-example--hidden">
+                        <img src="img/homeDesign.jpg"  alt="Фотография примера выполненой работы">
+                        <div class="service-example__text">
+                            <div class="service-example__text__info">    
+                                <h3>Дизайн жилого помещения</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam error ab 
+                                </p>
+                            </div>
+                            <div class="consultation">
+                                <p class="project__number">532 проекта</p>
+                                <a href="#">Консультация</a>
+                            </div>    
+                        </div>
+                    </div>
+
+                    <div class="service-example service-example--hidden">
+                        <img src="img/HotelsDesign.jpg"  alt="Фотография примера выполненой работы">
+                        <div class="service-example__text">
+                            <div class="service-example__text__info">    
+                                <h3>Дизайн отельных комнат</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ut ratione nobis. 
+                                    Tempora eius nihil asperiores quidem aut beatae ipsa alias accusantium delectus esse assumenda 
+                                    ullam, labore optio consectetur. Incidunt.
+                                Tempora, eum voluptate. Nostrum 
+                                </p>
+                            </div>
+                            <div class="consultation">
+                                <p class="project__number">532 проекта</p>
+                                <a href="#">Консультация</a>
+                            </div>    
+                        </div>
+                    </div>
+
+                    <div class="service-example ">
                         <img src="img/image.jpg"  alt="Фотография примера выполненой работы">
-                        <div class="service__eaxample__text">
-                            <div class="service__eaxample__text__info">    
+                        <div class="service-example__text">
+                            <div class="service-example__text__info">    
                                 <h3>Дизайн коммерческих объектов</h3>
                                 <p>Работая с коммерческими объектами, студия изучает целевую аудиторию, создаём
                                     коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели
                                     возвращаться в интерьер снова и снова
+                                </p>
+                            </div>
+                            <div class="consultation">
+                                <p class="project__number">532 проекта</p>
+                                <a href="#">Консультация</a>
+                            </div>    
+                        </div>
+                    </div>
+
+                    <div class="service-example service-example--hidden">
+                        <img src="img/keasDesign.jpg"  alt="Фотография примера выполненой работы">
+                        <div class="service-example__text">
+                            <div class="service-example__text__info">    
+                                <h3>Ремонт под ключ</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ut ratione nobis                        
+                                </p>
+                            </div>
+                            <div class="consultation">
+                                <p class="project__number">532 проекта</p>
+                                <a href="#">Консультация</a>
+                            </div>    
+                        </div>
+                    </div>
+
+                    <div class="service-example service-example--hidden">
+                        <img src="img/Finishing work.jpg"  alt="Фотография примера выполненой работы">
+                        <div class="service-example__text">
+                            <div class="service-example__text__info">    
+                                <h3>Отделочные работы</h3>
+                                <p>lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                            </div>
+                            <div class="consultation">
+                                <p class="project__number">532 проекта</p>
+                                <a href="#">Консультация</a>
+                            </div>    
+                        </div>
+                    </div>
+
+                    <div class="service-example service-example--hidden">
+                        <img src="img/DesignerAtHome.jpg"  alt="Фотография примера выполненой работы">
+                        <div class="service-example__text">
+                            <div class="service-example__text__info">    
+                                <h3>Выезд дизайнера на дом</h3>
+                                <p>Рlorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ut ratione nobis lorem lorem.  
                                 </p>
                             </div>
                             <div class="consultation">
@@ -194,7 +279,7 @@
             </div>
         </section>
         
-        <section class="quick-order">
+        <section class="quick-order" id="quick-order">
             <div class="container">
                 <div class="quick-order__form">
                     <h2>Мечтаете об интерьере от <span>BRUME</span>?</h2>
@@ -217,7 +302,7 @@
             </div>
         </section>
         
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <div class="container">
                 <h2>Отзывы наших клиентов</h2>
                 <div class="reviews__item">
@@ -237,13 +322,16 @@
                 </div>
             </div>
         </section>
+        <div class="scroll-up">
+            <a href="#top" class="scroll-up__link"><i class="fa fa-arrow-circle-up"></i></a>
+        </div>
     </main>
 
     <footer class="main-footer">
         <div class="container__footer">
             <p class="container__footer__license">BRUME interior, 2021 &copy;</p>
             <div class="logo-social">
-                <a href="#">
+                <a href="#top">
                     <img class="logo__footer" src="img/logo.png" alt="Sience 1997 логотип">
                 </a>        
                 <ul class="social-list">
