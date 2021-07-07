@@ -896,7 +896,7 @@ footer p {
         position: absolute;
         right: 10%;
     }
-    .slider-dots_item, ..slider-dots_reviews-item{
+    .slider-dots_item, .slider-dots_reviews-item{
         height: 3px;
         width: 10px;
         margin: 0 3px;
