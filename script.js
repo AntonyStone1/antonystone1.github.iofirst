@@ -8,6 +8,13 @@ const serviceItems = document.querySelectorAll('.service-item');
 const serviceExample = document.querySelectorAll('.service-example');
 const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
 
+// scroll to top
+window.addEventListener('scroll', () => {
+    (getTop() > 100) ? scrollUp.classList.add('scroll-up--active') : scrollUp.classList.remove('scroll-up--active');
+    }
+)
+
+
 // humburger menu
 hamburger.addEventListener('click', () => {
     navUL.classList.toggle('show');
@@ -24,43 +31,58 @@ hamburger.addEventListener('click', () => {
 // Hero slider
 let slideIndex = 1;
 showSlides(slideIndex);
-
-/* Функция увеличивает индекс на 1, показывает следующй слайд*/
 function plusSlide() {
     showSlides(slideIndex += 1);
 }
-
-/* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
 function minusSlide() {
     showSlides(slideIndex -= 1);  
 }
-
-/* Устанавливает текущий слайд */
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
-/* Основная функция слайдера */
 function showSlides(n) {
-    let i;
     let slides = document.getElementsByClassName("item");
     let dots = document.getElementsByClassName("slider-dots_item");
-    if (n > slides.length) {
-      slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
+    
+    for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    for (i = 0; i < dots.length; i++) {
+    for (let i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
 
+// reviews slider
+let slideReviewIndex = 1;
+showRevievSlider(slideReviewIndex);
+
+function plusReviewSlide() {
+    showRevievSlider(slideReviewIndex += 1);
+}
+function minusReviewSlide() {
+    showRevievSlider(slideReviewIndex -= 1);  
+}
+function currentReviewSlide(n) {
+    showRevievSlider(slideReviewIndex = n);
+}
+
+function showRevievSlider(n) {
+    let slides = document.getElementsByClassName("reviews__item");
+    let dots = document.getElementsByClassName("slider-dots_reviews-item");
+    
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    
+    slides[slideReviewIndex - 1].style.display = "block";
+    dots[slideReviewIndex - 1].className += " active";
+}
 
 // all achors scroll
 for (let achor of achors) {
@@ -73,15 +95,7 @@ achor.addEventListener('click', function (e) {
 })
 }
 
-// scroll to top
-window.addEventListener('scroll', () => {
-    (getTop() > 100) ? scrollUp.classList.add('scroll-up--active') : scrollUp.classList.remove('scroll-up--active');
-    }
-)
-
-
-//service items changer beta
-    
+// service items changer beta
 function toggleServiceList() {
     for (let i = 0; i < serviceItems.length; i++) {
         serviceItems[i].addEventListener('click', () => {

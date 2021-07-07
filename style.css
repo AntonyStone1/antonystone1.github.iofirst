@@ -129,10 +129,12 @@ body h1, h2 {
     margin-right: 15px;
     color: #fff;
     transform: scale(1.9);
-    z-index: 2;
+    z-index: 2;    
 }
 .hamburger:focus {
     outline: none;
+}
+.humburger__hidden {
 }
 
 
@@ -156,7 +158,7 @@ body h1, h2 {
     position: absolute;
     right: 10%;
 }
-.slider-dots_item{
+.slider-dots_item, .slider-dots_reviews-item{
     display: inline-block;
     background-color: #ddd;
     height: 5px;
@@ -166,10 +168,10 @@ body h1, h2 {
     cursor: pointer;
 }
 .active,
-.slider-dots_item:hover {
+.slider-dots_item:hover, .slider-dots_reviews-item:hover {
     background-color: #aaa;
 }
-.hero-slider .item {
+.hero-slider .item{
     height: 50em;
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -592,6 +594,11 @@ form .fa-phone-alt {
     align-items: center;
     padding-bottom: 50px;
 }
+.reviews-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 .reviews h2 {
     position: relative;
@@ -613,7 +620,7 @@ form .fa-phone-alt {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 480px;
+    width: 80%;
     padding: 50px 0 0 50px;
 }
 .reviews blockquote cite {
@@ -637,6 +644,8 @@ form .fa-phone-alt {
     position: absolute;
     right: -250px;
     top: 55px;
+    
+    object-fit: cover;
 }
 
 
@@ -700,7 +709,8 @@ footer p {
             90deg,
             rgba(18, 37, 54) 64.8%,
             rgb(24, 43, 60) 65.1%
-        ); 
+        );
+        transition: all 0.6s ease; 
     }
     .main-header-nav {
         flex-wrap: wrap;
@@ -789,7 +799,7 @@ footer p {
 
 }
 
-@media (max-width: 805px){
+@media (max-width: 805px){    
 
     .site-navigation.show {
         position: absolute;
@@ -803,7 +813,8 @@ footer p {
         right: 0;
         background: rgb(18, 37, 54);
         transition: all 0.6s ease;
-        z-index: 1;
+        z-index: 1;        
+        
     }
     .site-navigation-item, .telephone {
         padding: 5px 0;
@@ -885,7 +896,7 @@ footer p {
         position: absolute;
         right: 10%;
     }
-    .slider-dots_item{
+    .slider-dots_item, ..slider-dots_reviews-item{
         height: 3px;
         width: 10px;
         margin: 0 3px;
