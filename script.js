@@ -96,21 +96,21 @@ achor.addEventListener('click', function (e) {
 }
 
 // service items changer beta
-function toggleServiceList() {
-    for (let i = 0; i < serviceItems.length; i++) {
-        serviceItems[i].addEventListener('click', () => {
-            if (serviceItems[i].classList.value.split(' ')[1] !== 'service-item--active') {
-                serviceItems[i].classList.add('service-item--active')
-                serviceExample[i].classList.remove('service-example--hidden')
-                for (let j = 0; j < serviceItems.length; j++) {
-                    serviceItems[j].classList.remove('service-item--active')
-                    serviceItems[i].classList.add('service-item--active');
-                    serviceExample[j].classList.add('service-example--hidden')
-                    serviceExample[i].classList.remove('service-example--hidden')
-            }                
-            }
-        })
-    }    
-}
+// function toggleServiceList() {
+//     for (let i = 0; i < serviceItems.length; i++) {
+//         serviceItems[i].addEventListener('click', () => {
+//             if (serviceItems[i].classList.value.split(' ')[1] !== 'service-item--active') {
+//                 serviceItems[i].classList.add('service-item--active')
+//                 serviceExample[i].classList.remove('service-example--hidden')
+//                 for (let j = 0; j < serviceItems.length; j++) {
+//                     serviceItems[j].classList.remove('service-item--active')
+//                     serviceItems[i].classList.add('service-item--active');
+//                     serviceExample[j].classList.add('service-example--hidden')
+//                     serviceExample[i].classList.remove('service-example--hidden')
+//             }                
+//             }
+//         })
+//     }    
+// }
 
-toggleServiceList();
+// toggleServiceList();
