@@ -15,18 +15,18 @@ window.addEventListener('scroll', () => {
 )
 
 
-// humburger menu
-hamburger.addEventListener('click', () => {
-    navUL.classList.toggle('show');
-    document.querySelector('.hero-desc').classList.toggle('visually-hidden')
-    document.querySelector('.hero-desc').classList.toggle('zIndex')
-    document.querySelector('.hero').addEventListener('click', ()  => {
-        if (navUL.classList.contains('show')) {
-            navUL.classList.remove('show');
-            document.querySelector('.hero-desc').classList.toggle('zIndex')
-        }
-    })   
-});
+// // humburger menu
+// hamburger.addEventListener('click', () => {
+//     navUL.classList.toggle('show');
+//     document.querySelector('.hero-desc').classList.toggle('visually-hidden')
+//     document.querySelector('.hero-desc').classList.toggle('zIndex')
+//     document.querySelector('.hero').addEventListener('click', ()  => {
+//         if (navUL.classList.contains('show')) {
+//             navUL.classList.remove('show');
+//             document.querySelector('.hero-desc').classList.toggle('zIndex')
+//         }
+//     })   
+// });
 
 // Hero slider
 let slideIndex = 1;
