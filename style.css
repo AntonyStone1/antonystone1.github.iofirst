@@ -306,16 +306,16 @@ body h1, h2 {
 
 .service__parts {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
+    height: 45em;    
 }
-.service__parts ul {
+.service-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     margin: 10px 0 10px 0;
     list-style-type: none;
-    width: auto;
 }
 .service__parts li {
     width: 200px;
@@ -362,7 +362,7 @@ body h1, h2 {
 }
 .service-example__text h3 {
     font-family: 'Vidaloka', serif;
-    font-size: 2.3em;
+    font-size: 2em;
     font-weight: 300;
     line-height: 1.9em;
     color: #132e3f;
@@ -426,7 +426,6 @@ body h1, h2 {
     display: flex;
     justify-content: space-around;
     position: relative;
-    width: 310px;
     margin-right: 40px;
     height: 200px;
     list-style-type: none;
@@ -669,7 +668,7 @@ form .fa-phone-alt {
     left: -25px;
 }
 footer p {
-    margin: 0 5%;
+    margin: 10%;
     color: #ff9b49;
     font-size: 1.2em;
 }
@@ -747,7 +746,7 @@ footer p {
     }
 
     .service-example {
-        width: 60%;
+        width: 50%;
         margin-left: 30px;
     }
     .service-example__text {
@@ -833,7 +832,7 @@ footer p {
         width: 100%;
     }
     .consultation {
-        min-width: 250px;
+        min-width: 150px;
     }
      .consultation p{
         width: auto;
@@ -876,7 +875,7 @@ footer p {
     }
 }
 @media (max-width: 550px){
-
+    
     .container {
         background: #fcfcf4;
     }
@@ -935,8 +934,10 @@ footer p {
     }
 
     .logo-social {
+        width: 125px;
+    }
+    .social-list {
         width: 150px;
-        padding-left: 40px;
     }
     .container__footer p{
         align-self: flex-end;
@@ -951,6 +952,14 @@ footer p {
 
 
 @media (max-width: 375px) { 
+    body {
+        font-size: 0.8em;
+    }
+
+    .scroll-up {
+        right: 40px;
+        bottom: 25px;
+    }
     
     .site-navigation.show {
         height: 300px;
@@ -978,19 +987,16 @@ footer p {
         margin: 0;
     }
     .service-example__text__info h3 {
-        font-size: 1.9em;
         margin-bottom: 10px;
     }
-    .consultation {
-        min-width: 230px;
-    }  
+     
 
     .quick-order__form {
         min-width: 100%;
         padding: 50px;
     }    
-    .container__footer p:last-of-type {
-        margin: 0;
+    footer p {
+        margin: 5%;
     }
 }
 
