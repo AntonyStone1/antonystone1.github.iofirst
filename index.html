@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Vidaloka&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.1/css/all.css">
-    <link href="/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/logo_favicon.ico">
     <title>Главная страница сайта дизайна интерьеров</title>    
 </head>
 <body>
@@ -23,7 +23,7 @@
                 </button>    
                 <ul class="site-navigation  humburger__hidden" id="site-navigation">
                     <li class="site-navigation-item">
-                        <a href="#">Главная</a>
+                        <a href="#top">Главная</a>
                     </li>
                     <li class="site-navigation-item">
                         <a href="#advantages">Преимущества</a>
@@ -285,10 +285,10 @@
                     <h2>Мечтаете об интерьере от <span>BRUME</span>?</h2>
                     <p>Оставьте контактные данные, менеджер свяжется с вами в течение 15 минут, для уточнения всех деталей.</p>
                     <form class="quick-order__form__item" action="#" method="POST">
-                                <input type="text" id="quick-order-form-name" name="quick-order-form-name" placeholder="Имя&#9913;" required>
+                                <input type="text" id="quick-order-form-name" name="quick-order-form-name" placeholder="Имя&#9913;" required minlength="3" maxlength="15" pattern="[а-яА-я]+" title="Имя может содержать только буквы.">
                                 <label class="visually-hidden" for="quick-order-form-name">Имя</label>
                                 <i class="fas fa-user"></i>
-                                <input type="tel" id="quick-order-form-tel" name="quick-order-form-tel" placeholder="Телефон&#9913;" required >
+                                <input type="tel" id="quick-order-form-tel" name="quick-order-form-tel" placeholder="Телефон&#9913;" required minlength="10">
                                 <label class="visually-hidden" for="quick-order-form-tel">Телефон</label>
                                 <i class="fas fa-phone-alt"></i>
                                 <input type="email" id="quick-order-form-email" name="quick-order-form-email" placeholder="E-mail">

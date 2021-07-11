@@ -20,13 +20,17 @@ hamburger.addEventListener('click', () => {
     navUL.classList.toggle('show');
     document.querySelector('.hero-desc').classList.toggle('visually-hidden')
     document.querySelector('.hero-desc').classList.toggle('zIndex')
-    document.querySelector('.hero').addEventListener('click', ()  => {
+    document.querySelector('.main-header').classList.toggle('fixed-header')
+    document.querySelector('main').addEventListener('click', ()  => {
         if (navUL.classList.contains('show')) {
             navUL.classList.remove('show');
             document.querySelector('.hero-desc').classList.toggle('zIndex')
+            document.querySelector('.main-header').classList.toggle('fixed-header')
         }
     })   
 });
+
+
 
 // Hero slider
 let slideIndex = 1;
