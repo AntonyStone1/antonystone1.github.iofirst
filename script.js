@@ -1,6 +1,7 @@
 'use strict'
 const hamburger = document.getElementById('hamburger');
 const navUL = document.getElementById('site-navigation');
+const siteNavigationItems = document.querySelectorAll('.site-navigation-item')
 const achors = document.querySelectorAll('a[href*="#"]');
 const scrollUp = document.querySelector('.scroll-up');
 const scrollUpActive = document.querySelector('.scroll-up--active');
@@ -14,21 +15,37 @@ window.addEventListener('scroll', () => {
     }
 )
 
-
 // humburger menu
 hamburger.addEventListener('click', () => {
     navUL.classList.toggle('show');
     document.querySelector('.hero-desc').classList.toggle('visually-hidden')
     document.querySelector('.hero-desc').classList.toggle('zIndex')
-    document.querySelector('.main-header').classList.toggle('fixed-header')
+
+    // closing hamburger menu by pressing outside the humburger button
     document.querySelector('main').addEventListener('click', ()  => {
         if (navUL.classList.contains('show')) {
             navUL.classList.remove('show');
             document.querySelector('.hero-desc').classList.toggle('zIndex')
-            document.querySelector('.main-header').classList.toggle('fixed-header')
         }
-    })   
+    })    
 });
+
+// closing hamburger menu after pressing navigation link
+for ( let i = 0; i <siteNavigationItems.length; i++) {
+    siteNavigationItems[i].addEventListener('click', () => {
+        navUL.classList.remove('show')
+    })
+}
+
+const toggleFixedHeader = () => {
+    const mainHeader = document.querySelector('.main-header')
+    let result;
+    result = document.documentElement.clientWidth;
+    (result <= 1055) ? mainHeader.classList.add('fixed-header') : mainHeader.classList.remove('fixed-header')
+};
+
+document.addEventListener('DOMContentLoaded', toggleFixedHeader);
+window.addEventListener('resize', toggleFixedHeader);
 
 
 
