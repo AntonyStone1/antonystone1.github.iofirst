@@ -181,26 +181,7 @@ a {
 } 
 .hero-slider .item{
     height: 50em;
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 0.8s;
-    animation-name: fade;
-    animation-duration: 0.8s;
-}
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
+    
 }
 
 
@@ -332,7 +313,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-start;    
     margin: 10px 0 10px 0;
     list-style-type: none;    
 }
@@ -766,7 +747,7 @@ footer p {
         width: 60%;
     }
     
-    .site-navigation.show {
+    .show {
         display: flex;
     }
 
@@ -811,12 +792,12 @@ footer p {
     .reviews__item {
         margin-top: 10%;
         padding-top: 15%;
-        width: 60%;
-        height: 50%;
+        width: 55%;
+        height: 38em;
         left: 0;
     }
     .reviews__item blockquote {
-        padding: 15% 20px 20px 20px;        
+        padding: 15% 20px 20px 40px;        
     }
     .reviews__item img {
         justify-items: flex-end;
@@ -832,7 +813,7 @@ footer p {
 
 @media (max-width: 805px){    
 
-    .site-navigation.show {
+    .show {
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -843,10 +824,12 @@ footer p {
         top: 100%;
         right: 0;
         background: rgb(18, 37, 54);
-        transition: all 0.6s ease;
-        z-index: 1;        
-        
+        z-index: 1;
     }
+    /* .site-navigation--animation {
+        top: 100%;
+        transition: bottom 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    } */
     .site-navigation-item, .telephone {
         padding: 5px 0;
     }
@@ -922,8 +905,11 @@ footer p {
     .service h2, .stages-of-work h2, .reviews h2 {
         font-size: 3em;
     }
+    .service-container {
+        height: 60%;
+    }
     .service__parts {
-        height: 50em;
+        height: 55em;
     }
 
     .slider-dots {

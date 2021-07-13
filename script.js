@@ -15,6 +15,8 @@ window.addEventListener('scroll', () => {
     }
 )
 
+
+
 // humburger menu
 hamburger.addEventListener('click', () => {
     navUL.classList.toggle('show');
@@ -36,7 +38,7 @@ for ( let i = 0; i <siteNavigationItems.length; i++) {
         navUL.classList.remove('show')
     })
 }
-
+// changing fixed position of header
 const toggleFixedHeader = () => {
     const mainHeader = document.querySelector('.main-header')
     let result;
